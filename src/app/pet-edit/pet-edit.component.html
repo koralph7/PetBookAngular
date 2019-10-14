@@ -1,0 +1,30 @@
+
+<div class="div" style="position: relative; top: 100px; left: 350px;">
+    <form #f="ngForm" style="width: 400px;">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" [(ngModel)] = "pet.name" class="form-control" name = "name" >
+          <label for="age">Age</label>
+          <input type="number" [(ngModel)] = "pet.age" class="form-control" name = "age"  >
+        </div>
+        <div class="form-group">
+          <label for="species">Species</label>
+          <select class="form-control" [(ngModel)] = "pet.species" name = "species" >
+                  <option>Cat</option>
+                  <option>Dog</option>
+                  <option>Horse</option>
+                  <option>Snake</option>
+                  <option>Parrot</option>
+                  <option>rabbit</option>
+                  <option>hamster</option>
+                  <option>guinea pig</option>
+                </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="img">Image Link</label>
+          <textarea class="form-control" [(ngModel)] = "pet.imagePath" name = "imagePath"  rows="3"></textarea>
+        </div>
+      </form>
+      <button type="button" class="btn btn-dark" (click) = "editPet()">Edit</button>
+</div>

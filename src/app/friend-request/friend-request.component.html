@@ -1,0 +1,19 @@
+
+  <div *ngFor="let userEl of users">
+    
+   <div class="list-group-item clearfix" style="width: 200px; float: left; background-color: burlywood">
+    <div class="row">
+    <div class="pl" >
+        <p class="list-group-item-text" style="float: left">{{userEl.id}}</p>
+        <h4 class="list-group-item-heading" style="float: left; padding-left: 30px">{{userEl.username}}</h4>
+        
+    </div>
+  </div>  
+    <div class="row" style="font-size: 12px">
+      <button type="button" class="btn btn-light" style="font-size: 12px;width: 50px; height: 30px; float: left;" (click)="accept(userEl.id)">Light</button>
+<button type="button" class="btn btn-dark"style="font-size: 12px;width: 55px; height: 30px; float: left;"(click)="delete(userEl.id)">Delete</button>
+    </div>
+    
+  </div>
+  </div>
+

@@ -1,0 +1,48 @@
+<!-- <div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewRecipe()">New Pet</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <!-- <li *ngFor="let petElement of pets">
+      <a routerLink="/pets/{{pets.id}}">
+        <span class="badge">{{pets.id}}</span> {{pets.name}}
+      </a> -->
+      <!-- <app-pet-small
+      *ngFor="let petEl of pets; let i = index"
+      [pet]="petEl"
+      [index]="i"></app-pet-small>
+  </div>
+</div> --> 
+<!-- <div class="row">{{userId}}</div> -->
+
+ <h2 style="position: relative; left: 300px">Hello {{info.username}}</h2>
+
+<button type="button" class="btn btn-primary" (click) = "onAdd()">Add Pet</button>
+<!-- <div *ngIf="info.token;"> -->
+<!-- routerLink="/pets/{{petEl.id}}"  -->
+<!-- </div> -->
+<div class="row" style="position: relative; top:100px"><h2 >My Pets</h2 ></div>
+
+<ul class="heroes" style="position: relative; top: 100px;">
+  <div *ngFor="let petEl of pets">
+    <a  routerLink="/pets/{{petEl.id}}"  
+    
+    class="list-group-item clearfix" style="width: 200px; float: left;">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{petEl.name}}</h4>
+        <p class="list-group-item-text">{{petEl.species}}</p>
+    </div>
+    <span class="pull-right">
+        <img
+         [src]="petEl.imagePath"
+         alt="{{petEl.name}}" 
+         class="img-responsive"
+         style="max-height: 50px;">
+    </span>
+    </a>
+    
+  </div>
+</ul>

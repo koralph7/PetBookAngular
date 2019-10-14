@@ -1,0 +1,39 @@
+ 
+
+<!-- <h1 class = "text-center" style="position: relative; top:100px;">
+  Welcome to PetBook!  </h1>
+
+
+  <div class="row">
+    <button type="button" class="btn btn-warning">Add a pet</button>
+
+  </div> -->
+
+  <div *ngIf="info.token; else loggedOut">
+      <h5 class="text-primary">Your Information</h5>
+      <p>
+        <strong>Username:</strong> {{info.username}}<br/>
+        <strong>email:</strong> {{info.email}}<br/>
+        <!-- <strong>Id:</strong> {{info.id}}<br />
+        <strong>Roles:</strong> {{info.authorities}}<br />
+        <strong>Token:</strong> {{info.token}}. -->
+      </p>
+      <!-- <button class="btn btn-secondary" (click)="logout()">Logout</button>
+      <a routerLink="/pets"><button class="btn btn-success pull-right" > See pets</button></a>
+      <a routerLink="/new"><button class="btn btn-success pull-right" > Add pets</button></a> -->
+    </div>
+    
+    <!-- <a routerLink="/add"><button class="btn btn-success pull-right" > Add pets</button></a> -->
+    <ng-template #loggedOut>
+      
+      <div class="hhi" style="position: relative; left: 150px;  top: 100px;font-size: 80px; color: #99ff99" >Welcome to PetBook!
+      </div>
+
+      <div class="hiih" style="position: relative; top:200px;left:450px">
+
+      <a class="btn btn-primary" href="auth/login">SignIn</a>
+      or
+      <a class="btn btn-primary" href="signup">SignUp</a>
+    </div>
+   
+    </ng-template>

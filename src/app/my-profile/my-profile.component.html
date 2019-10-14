@@ -1,0 +1,59 @@
+<div class="container" style="background-color: beige">
+    <div class="userInfo" style="float:left; width: 200px;">
+      <p class="list-group-item-text">{{myprofile.name}}</p>
+        <p class="list-group-item-text">{{myprofile.lastname}}</p>
+        <p class="list-group-item-text">{{myprofile.city}}</p>
+        <p class="list-group-item-heading">{{myprofile.dateOfBorn}}</p>
+      </div>
+    <div class="posts">
+<div class="roww" style="float:left; width: 500px;">
+    <div class="col-xs-12">
+  <div *ngFor="let postEl of posts">
+    
+    
+    <div class="list-group-item clearfix" style="margin: 20px; width: 400px; height: 400px;">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{postEl.createDateTime}}</h4>
+        <p class="list-group-item-text">{{postEl.text}}</p>
+    </div>
+    <span class="pull-right">
+        <img
+         [src]="postEl.image"
+         alt="{{postEl.image}}" 
+         class="img-responsive"
+         style="max-height: 50px;">
+    </span>
+  </div>  
+  </div> 
+</div>
+</div>
+</div>
+</div>
+
+<!-- <div class="container">
+    <div *ngIf="myprofile">
+  <div class="user-info"style="float:left; width: 200px;">
+    <div class="list-group-item clearfix" style="margin: 20px; ">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{myprofile.name}}</h4>
+        <p class="list-group-item-text">{{myprofile.lastname}}</p>
+        <p class="list-group-item-text">{{myprofile.city}}</p>
+        <p class="list-group-item-text">{{myprofile.dateOfBorn}}</p>
+    </div>
+     <span class="pull-right">
+        <img
+         [src]="postEl.image"
+         alt="{{postEl.image}}" 
+         class="img-responsive"
+         style="max-height: 50px;">
+    </span> -->
+   <!-- </div>  
+  </div> 
+    </div>
+  <div class="board"style="float:left; ">blabla</div>
+</div> 
+
+ <p class="list-group-item-heading">{{myprofile.name}}</p>
+        <p class="list-group-item-text">{{myprofile.lastname}}</p>
+        <p class="list-group-item-text">{{myprofile.city}}</p>
+        <p class="list-group-item-text">{{myprofile.dateOfBorn}}</p> -->

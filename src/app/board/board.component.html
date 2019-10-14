@@ -1,0 +1,37 @@
+<div class="container">
+
+<div class="first" style="float:left; margin: 20px; background-color: burlywood; width: 170px" >tu jest lewa</div>
+<div class="second" style="float:left; margin: 20px; width: 600px; text-align: center;">
+<div class="row">
+
+Create a post
+  
+</div>
+
+<div class="row">
+  <form #f="ngForm">
+    <div class="form-group" style="width: 600px">
+      <label for="text">Text</label>
+      <input type="text" [(ngModel)] = "post.text" class="form-control" name = "text" >
+      <label for="image">Image</label>
+      <input type="text" [(ngModel)] = "post.image" class="form-control" name = "image"  >
+    </div>
+    
+  </form>
+</div>
+  <div class="row">
+  <button type="button" class="btn btn-dark" (click) = "addPost()">Add</button>
+
+</div>
+<div class="row">
+  <app-search-user></app-search-user>
+</div>
+</div>
+  <div class="third" style="float:left; margin-top: 20px;  background-color:honeydew"><app-friend-request></app-friend-request></div>
+</div>
+
+<div>
+  <div class="row">
+    
+  </div>
+</div>
